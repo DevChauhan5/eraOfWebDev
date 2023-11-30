@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Righteous', sans-serif; */
+}
+
+.nav{
+    background-color: aquamarine;
+    padding: .6rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav img{
+    width: 8rem;
+}
+
+/* .nav-mid{
+} */
