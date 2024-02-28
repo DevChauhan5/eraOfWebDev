@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>todo_app</title>
+</head>
+<body class="bg-gray-200 min-h-screen flex justify-center items-center">
+    <div class="container mx-auto p-8">
+        <h1 class="text-3xl mb-8 text-center">Todo App</h1>
+        <!-- Input box to add new todos -->
+        <div class="mb-4 flex items-center justify-center gap-1 rounded-lg">
+            <input type="text" id="new-todo" class="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-blue-500" placeholder="Add a new todo">
+            <button id="add-todo-button" class="bg-blue-400 text-white text-xl p-1 rounded-full">+</button>
+        </div>
+        <!-- Containers for todos -->
+        <div class="grid grid-cols-3 gap-8">
+            <div class="bg-white p-4 rounded shadow">
+                <h2 class="text-lg font-semibold mb-4">Not Started</h2>
+                <ul id="not-started-todos" class="space-y-2"></ul>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+                <h2 class="text-lg font-semibold mb-4">In Progress</h2>
+                <ul id="in-progress-todos" class="space-y-2"></ul>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+                <h2 class="text-lg font-semibold mb-4">Done</h2>
+                <ul id="done-todos" class="space-y-2"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="./javascript/script.js"></script>
+</body>
+</html>
